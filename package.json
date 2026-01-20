@@ -11,5 +11,5 @@
     "@vercel/ncc": "^0.34.0"
   },
   "license": "SEE LICENSE IN COMMERCIAL-LICENSE.txt",
-  "name": "gitleaks-github-action"
+  "name": "@3caravelle/gitleaks-github-action"
 }

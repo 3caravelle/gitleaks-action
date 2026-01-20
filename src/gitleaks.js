@@ -167,8 +167,9 @@ async function ScanPullRequest(
   );
 
   let scanInfo = {
-    baseRef: commits.data[0].sha,
-    headRef: commits.data[commits.data.length - 1].sha,
+    // gitea returns the oldest commit first (opposite of github)
+    headRef: commits.data[0].sha,
+    baseRef: commits.data[commits.data.length - 1].sha,
   };
 
   // Override scanInfo.baseRef if `BASE_REF` is set.
